@@ -1,0 +1,229 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(238, 74, 24);
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: "Courier New", Courier, monospace;
+}
+.container form input {
+  width: 50vw;
+  height: 2rem;
+  border-radius: 5px;
+  border: 1px solid white;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: 700;
+}
+
+.container form button {
+  margin-top: 5px;
+  margin-bottom: 2px;
+  width: 50vw;
+  border-radius: 5px;
+  border: 1px solid white;
+  background-color: bisque;
+  cursor: pointer;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+.container h1 {
+  color: aliceblue;
+}
+
+.second {
+  color: aliceblue;
+  font-size: 1.2rem;
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  margin-left: 2rem;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.avatar {
+  border-radius: 5px;
+  width: 200px;
+  height: 200px;
+  margin: auto 0 auto 0;
+}
+
+#result {
+  height: 100%;
+  width: 100%;
+}
+
+.full {
+  display: flex;
+  flex-direction: column;
+  margin-left: 2rem;
+}
+
+.full div {
+  margin-top: 0.5rem;
+}
+
+/* #repos {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  gap: 15px;
+  justify-content: space-between;
+} */
+
+#repos {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@media (max-width: 550px) {
+  #repos > div {
+    flex-basis: calc(100% - 10px);
+    margin-bottom: 10px;
+    margin-top: 10px;
+    padding-bottom: 5px;
+    padding-left: 3px;
+    box-sizing: border-box;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #repos p {
+    text-align: center;
+    font-family: "Courier New", Courier, monospace;
+    font-weight: 800;
+
+    margin: 1rem auto 2rem auto;
+    padding: 2px 4px;
+    word-wrap: break-word;
+    width: 250px;
+  }
+}
+
+@media (min-width: 550px) and (max-width: 900px) {
+  #repos > div {
+    flex-basis: calc(50% - 10px);
+    margin-bottom: 10px;
+    margin-top: 10px;
+    padding-bottom: 5px;
+    padding-left: 3px;
+    box-sizing: border-box;
+  }
+  #repos > div:nth-child(2n + 1) {
+    flex-basis: calc(50% - 10px + 5px);
+  }
+
+  #repos p {
+    text-align: center;
+    font-family: "Courier New", Courier, monospace;
+    font-weight: 800;
+
+    margin: 1rem auto 2rem auto;
+    padding: 2px 4px;
+    word-wrap: break-word;
+    width: 250px;
+  }
+}
+
+@media (min-width: 900px) and (max-width: 1150px) {
+  #repos > div {
+    flex-basis: calc(33.33% - 10px);
+    margin-bottom: 10px;
+    margin-top: 10px;
+    padding-bottom: 5px;
+    padding-left: 3px;
+    box-sizing: border-box;
+  }
+  #repos > div:nth-child(3n + 1) {
+    flex-basis: calc(33.33% - 10px + 5px);
+  }
+
+  #repos p {
+    text-align: center;
+    font-family: "Courier New", Courier, monospace;
+    font-weight: 800;
+
+    margin: 1rem auto 2rem auto;
+    padding: 2px 4px;
+    word-wrap: break-word;
+    width: 250px;
+  }
+}
+
+@media (min-width: 1151px) {
+  #repos > div {
+    flex-basis: calc(33.33% - 40px);
+    margin-bottom: 10px;
+    margin-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    box-sizing: border-box;
+  }
+
+  #repos p {
+    text-align: center;
+    font-family: "Courier New", Courier, monospace;
+    font-weight: 800;
+    margin-bottom: 2rem;
+    padding: 2px 4px;
+    word-wrap: break-word;
+    width: 250px;
+  }
+}
+
+#repos div {
+  border-radius: 5px;
+}
+
+#repos span {
+  background-color: rgb(122, 232, 100);
+  margin: 0 4px;
+  padding: 2px 5px;
+  border-radius: 3px;
+}
+.language-container {
+  margin-bottom: 0.5rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+#pagination {
+  margin-top: 1rem;
+  text-align: center;
+}
+
+#pagination button {
+  height: 1.5rem;
+  border-radius: 5px;
+  border: 1px solid white;
+}
+
+#pagination-number {
+  margin-left: 2rem;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-weight: 100;
+  letter-spacing: normal;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#pagination-number select {
+  border-radius: 5px;
+  height: 1.5rem;
+}

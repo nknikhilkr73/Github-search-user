@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <link>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment</title>
+    <link rel="stylesheet" href="index.css">
+  </head>
+  <body>
+<div class="container">
+    <br> <br>
+    <h1 style="text-align:center;">
+    Github Search user</h1>
+    <form id="myForm" autocomplete="off">
+        <div class="form-group">
+            <input type="text" class="form-control" id="search" placeholder="Search Username" required>
+        </div>
+        <div class="form-group">
+            <button class="btn btn-danger btn-block">Search User</button>
+        </div>
+    </form>
+</div>
+<div class="second">
+    <div class="avatar"><div id="result"></div> </div>
+     <div class="full">
+    <div id="name"></div>
+    <div id="bio"></div>
+   
+    <div id="location"></div>
+
+    </div>
+    <div id="pagination-number" style="display: none;">
+    <label for="repos-per-page">Repos per page:</label>
+    <select id="repos-per-page">
+        <option value="10">10</option>
+        <option value="20">20</option>
+        <option value="50">50</option>
+        <option value="100">100</option>
+    </select>
+</div>
+
+</div>
+
+
+<div id="repos" ></div>
+
+ <div id="pagination">
+      <button id="prevPage" onclick="changePage(-1)" disabled>
+        Previous Page
+      </button>
+      <button id="nextPage" onclick="changePage(1)" disabled>Next Page</button>
+    </div>
+
+
+<script src="index.js"></script>
+  </body>
+</html>
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 style="text-align: center">Github Search user</h1>
+      <form id="myForm" autocomplete="off">
+        <div class="form-group">
+          <input
+            type="text"
+            class="form-control"
+            id="search"
+            placeholder="Search Username"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <button class="btn btn-danger btn-block">Search User</button>
+        </div>
+      </form>
+    </div>
+    <div class="second">
+      <div class="avatar"><div id="result"></div></div>
+      <div class="full">
+        <div id="name"></div>
+        <div id="bio"></div>
+        <div id="location"></div>
+      </div>
+    </div>
+    <div id="repos"></div>
+    <div id="pagination">
+      <button id="prevPage" onclick="changePage(-1)" disabled>
+        Previous Page
+      </button>
+      <button id="nextPage" onclick="changePage(1)" disabled>Next Page</button>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html> -->
